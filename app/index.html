@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おうち家計簿 — 家族の家計を、ひと目で。</title>
+<meta name="description" content="収入と支出を記録し、月ごとの収支とカテゴリ別の使い道をひと目で確かめられる、家族のための家計簿サイト。データはこのブラウザの中だけに保存されます。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">家</span>
+      <span class="brand-text">
+        <span class="brand-name">おうち家計簿</span>
+        <span class="brand-sub">家族の家計を、ひと目で。</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主なページ">
+      <a href="#/" data-nav="dashboard">ダッシュボード</a>
+      <a href="#/entries" data-nav="entries">明細</a>
+      <a href="#/analysis" data-nav="analysis">分析</a>
+      <a href="#/budget" data-nav="budget">予算</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite">
+  <noscript><p class="notice">この家計簿は JavaScript を使います。JavaScript を有効にしてお開きください。</p></noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>おうち家計簿 — データはこのブラウザの localStorage にだけ保存され、外部には送られません。</p>
+    <p><a href="#/entries">明細を記録する</a> · <a href="#/analysis">今月の使い道を見る</a> · <a href="#/budget">予算を確認する</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
